@@ -1,0 +1,266 @@
+*{
+    font-family:Helvetica, Arial, sans-serif;
+    color:white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background-color:#e6e9eb;
+    background-color:#4158D0;
+    /* background-image: linear-gradient(-40deg, #4158D0 0%, #C850C0 16%, #FFCC70 100%); */
+    background-image: linear-gradient(-40deg, #4158D0 0%, rgb(147, 34, 228) 16%, rgba(244, 126, 9, 0.754)100%);
+    /* background-blend-mode:multiply; */
+    background-size: 100% auto;
+}
+
+/* --- NAVBAR --- */
+
+nav {
+    background-color: rgba(0, 0, 0, 0.161);
+    /* background-color: #97dde130; */
+    margin:0;
+    padding:0;
+    width: 100%;
+    height:calc(40px + 1em);
+    font-weight: bold;
+    display:flex;
+}
+
+/* .navLogo{
+    position: relative;
+    top: -55px;
+} */
+
+/* --- LINKS --- */
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    /* color:rgba(151, 0, 28, 0.862); */
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color:rgba(65, 12, 190, 0.403);
+    border-color: rgb(255, 255, 255);
+    border-width: 3px;
+    border-style: solid;
+    
+}
+a:active{
+    color:rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+footer a:link, footer a:visited{
+    text-decoration: underline;
+}
+
+nav a:hover, footer a:hover{
+    color:white;
+    border:none;
+    text-decoration: underline;
+    background-color: initial;
+}
+
+.card:hover h2{
+    text-decoration: underline;
+    color: white;
+}
+
+nav a{
+    margin:10px auto;
+    padding: .35em;
+    text-align: center;
+}
+
+/* --- FOOTER --- */
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7em;
+    margin-top: 5em;
+    background-color: rgba(0, 0, 0, 0.161);
+    text-align: center;
+}
+
+footer div{
+    margin: 2em 0;
+}
+
+footer p{
+    margin: 1em 0;
+}
+
+/* --- WRAPPER --- */
+
+.container{
+    position: relative;
+    min-height: 100vh;
+    text-align: left;
+}
+
+main{
+    padding-bottom: 12em;
+    padding: 2% 2% 12em;
+}
+
+/* --- MAIN --- */
+
+.cardStack, .stripeItems, .overview{
+    display: flex;
+}
+
+.cardStack, .stripe{
+    margin: 4% auto;
+}
+
+.wideCard, .card, .stripe{
+    border-width:2px;
+    border-radius: 20px;
+    border-color: #e6e9eb89;
+    background-color: rgba(0, 0, 0, 0.161);
+}
+
+.card, .stripe{
+    padding: 20px 10px;
+}
+
+.cardStack, .stripeItems{
+    gap: 2%;
+}
+
+h1, h2, h3, .wideCard p{
+    text-align: center;
+}
+
+h1, h2{
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 1,8em;
+}
+
+.wideCard{
+    padding: 80px 20px 80px;
+}
+
+.wideCard h2{
+    font-size: 1.8em;
+}
+
+.wideCard p {
+    text-align: justify;
+    width: 60%;
+    margin: 50px auto 50px;
+    /* font-size: 1.2em; */
+}
+
+.wideCard img{
+    position: relative;
+    width: 300px;
+    left: calc(50% - 300px/2);
+    margin: 50px auto;
+}
+
+.card, .stripe{
+    flex-basis: 100%;
+}
+
+.stripeItems p{
+    flex-basis: 100%;
+    text-align: left;
+    margin: 5px 5px;
+}
+
+.card p{
+    text-align: center;
+    /* margin: auto 50px; */
+    /* margin: 5px 5px; */
+}
+
+.card img{
+    position: relative;
+    width: 100px;
+    left: calc(50% - 100px/2);
+    margin: 50px auto 20px;
+}
+
+.uni{
+    margin: 50px 10px;
+    
+}
+
+.uni img{
+    width: 100px;
+}
+
+.resDownload{
+    position: relative;
+    bottom: 180px;
+}
+
+.stripeItems .card{
+    background-color: transparent;
+    /* border-style:none;     */
+}
+
+.cardStack .stripe{
+    background-color:transparent;
+    border-style: solid;
+    border-color: #e6e9eb89;
+    background-color: rgba(0, 0, 0, 0.161);
+}
+
+/* --- PROJECTS OVERVIEW --- */
+
+.overview{
+    width: 100%;
+    margin: 4% auto;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.quickView video, .quickInfo{
+    /* margin: 0 50px; */
+    /* flex-basis: 80%; */
+    /* width: 60vw; */
+    /* overflow: hidden; */
+}
+
+.quickView video, .quickView img{
+    /* flex-basis: 80%; */
+    width: 1000px;
+    max-width: 60vw;
+    /* overflow: hidden; */
+}
+
+.quickInfo {
+    position: relative;
+    flex-basis: 25%;
+}
+
+.quickInfo h2{
+    text-align: left;
+    margin: 50px 0;
+}
+
+.quickInfo img{
+    width:30px;
+    /* float: left; */
+    position: absolute;
+    left: 110px;
+    top:140px;
+    margin-top:10px;
+}
