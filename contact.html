@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Me</title>
+	<link rel="icon" href="assets/images/CS.svg">
+	<link rel="stylesheet" href="assets/css/style.css">  
+</head>
+
+<!-- WRAPPER -->
+<body><div class="container">
+    
+<!-- NAVBAR -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="spacer"><a></a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a href="assets/docs/carson-schwab_ux-resume.pdf">Resume</a></li>        
+    </ul>
+</nav>
+    
+<!-- MAIN CONTENT -->
+<main>
+	<div class="wideCard">
+		<h1>Contact Me</h1>
+		<p>Please feel free to reach out to me about employment opportunities, the content on my site, or any other reason! Linkedin is my preferred method of contact.</p>
+	</div>
+
+	<div class="cardStack" class="shorter">
+		<a class="card" href="https://www.linkedin.com/in/ux-carson">
+            <h2>Linkedin</h2>
+            <img src="assets/icons/linkedin.png" alt="descript">
+			<p>Linkedin.com/in/ux-carson</p>
+            <p class="preferred">(Preferred)</p>
+		</a>
+		
+		<a class="card" href="https://maps.app.goo.gl/eftGFQ34hErMBePf6">
+            <h2>Location</h2>
+            <img src="assets/icons/location.png" alt="descript">
+			<p>Skaneateles, NY</p>
+		</a>
+        
+		<a class="card" href="mailto:carsonschwab@gmail.com">
+            <h2>Email</h2>
+            <img src="assets/icons/email.png" alt="descript">
+			<p>Carsonschwab@gmail.com</p>
+		</a>
+	</div>
+    
+    <div class="copyButtons">
+        <div>
+            <button class="linkedin" class="btn" id="button1" onclick="linkedin()" onmouseover="colorChange1()" onmouseout="colorReturn1()">Copy to clipboard</button>
+        </div>
+        <div></div>
+        <div>
+            <button class="email" class="btn" id="button2" onclick="email()" onmouseover="colorChange2()" onmouseout="colorReturn2()">Copy to clipboard</button>
+        </div>
+    </div>
+    
+    <!-- <p>Click copy to clipboard</p> -->
+    <input type="text" value="carsonschwab@gmail.com" id="email">
+    <input type="text" value="https://www.linkedin.com/in/ux-carson" id="linkedin">
+    
+</main>
+    
+<!-- FOOTER -->
+<footer>
+    <div>
+        <a href="#top">Back to top</a>
+    </div>
+    
+    <p>©<span id="thisYear"></span> Carson Schwab Design. All Rights Reserved</p>
+    <script>document.getElementById('thisYear').innerHTML = new Date().getFullYear();</script>
+</footer>
+
+<!-- SCRIPT FOR COPYING CONTACT INFO TO CLIPBOARD -->
+<script>
+function email() {
+    var copyText = document.getElementById('email');
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    alert("Copied: " + copyText.value);
+}
+function linkedin() {
+    var copyText = document.getElementById('linkedin');
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    alert("Copied: " + copyText.value);
+}
+
+function colorChange1(){
+    var btn = document.getElementById("button1");
+    // btn.style.backgroundColor = "blue";
+    btn.style.color = "black";
+    btn.style.backgroundColor = "#b2e7fb";
+    
+}
+function colorReturn1(){
+    var btn = document.getElementById("button1");
+    // btn.style.backgroundColor = "blue";
+    btn.style.color = "white";
+    btn.style.backgroundColor = "#00000029";
+    
+}
+
+function colorChange2(){
+    var btn = document.getElementById("button2");
+    // btn.style.backgroundColor = "blue";
+    btn.style.color = "black";
+    btn.style.backgroundColor = "#b2e7fb";
+    
+}
+function colorReturn2(){
+    var btn = document.getElementById("button2");
+    // btn.style.backgroundColor = "blue";
+    btn.style.color = "white";
+    btn.style.backgroundColor = "#00000029";
+    
+}
+</script>
+
+<!-- WRAPPER END -->
+</div></body></html>
