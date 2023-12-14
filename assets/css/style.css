@@ -1,0 +1,602 @@
+
+/* --- DOCUMENT --- */
+
+*{
+    font-family:Helvetica, Arial, sans-serif;
+    color:white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background-color:#e6e9eb;
+    background-color:#4158D0;
+    background-image: linear-gradient(-40deg, #4158D0 0%, rgb(147, 34, 228) 16%, rgba(244, 126, 9, 0.754)100%);
+    background-size: 100% auto;
+}
+
+/* --- WRAPPER --- */
+
+.container{
+    position: relative;
+    min-height: 100vh;
+    text-align: left;
+}
+
+main{
+    padding-bottom: 12em;
+    padding: 2% 2% 12em;
+}
+
+/* --- FOOTER --- */
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* height: 7em; */
+    margin-top: 5em;
+    background-color: rgba(0, 0, 0, 0.161);
+    text-align: center;
+}
+
+footer div{
+    margin: 2em 0;
+}
+
+footer p{
+    margin: 1em 0;
+}
+
+/* --- NAVBAR --- */
+
+nav {
+    background-color: rgba(0, 0, 0, 0.161);
+    margin:0;
+    padding:0;
+    width: 100%;
+    font-weight: bold;
+}
+
+ul{
+    display:flex;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    text-align: center;
+}
+
+li a{
+    display: block;
+    padding:15px 30px;
+}
+
+.spacer{
+    flex-grow: 10;
+    flex-shrink: 10;
+}
+
+/* --- LINKS --- */
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color:rgba(65, 12, 190, 0.403);
+}
+
+a.active{
+    color:rgb(255, 255, 255);
+    background-color:#65000053;
+}
+
+footer a:link, footer a:visited{
+    text-decoration: underline;
+}
+
+nav a:hover, footer a:hover{
+    color:white;
+    border:none;
+    text-decoration: underline;
+    background-color: initial;
+}
+
+.card:hover h2{
+    text-decoration: underline;
+    color: white;
+}
+
+/* --- COMPONENTS --- */
+
+.cardStack, .stripeItems, .overview{
+    display: flex;
+}
+
+.cardStack, .stripe{
+    margin: 4% auto;
+}
+
+.wideCard, .card, .stripe{
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.161);
+}
+
+.card{
+    padding: 30px 10px;
+}
+
+.stripe{
+    padding: 60px 10px 20px;
+}
+
+.subStripe{
+    margin: 3% auto;
+}
+
+.cardStack, .stripeItems{
+    gap: 20px;
+}
+
+.eduStripe{
+    margin: 0 5%;
+    gap: 5%;
+}
+
+.stripeItems{
+    justify-content: center;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+h1, h2{
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+.wideCard{
+    padding: 80px 20px 80px;
+}
+
+.wideCard h2{
+    font-size: 1.8em;
+}
+
+.wideCard p {
+    text-align: justify;
+    width: 50%;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.wideCard img{
+    position: relative;
+    width: 300px;
+    left: calc(50% - 300px/2);
+    margin: 50px auto;
+}
+
+.card, .stripe{
+    flex-basis: 100%;
+}
+
+.stripeItems p, .stripeItems img{
+    text-align: left;
+    margin: 5px 5px;
+}
+
+.card p{
+    text-align: center;
+}
+
+.card img{
+    position: relative;
+    width: 100px;
+    left: calc(50% - 100px/2);
+    margin: 50px auto 20px;
+}
+
+img.fig{
+    margin-top: 20px;
+}
+
+.uni img{
+    width: 120px;
+    margin:0 calc(40% - 60px) 0 calc(60% - 60px);
+}
+
+.uni .cat{
+    width: 150px;
+}
+
+.uni{
+    width: 100%;
+    margin: 50px 20px;
+    flex-basis: 100%;
+}
+
+/* --- CONTACT --- */
+
+.resDownload{
+    position: relative;
+    bottom: 180px;
+}
+
+.preferred{
+    position: relative;
+    top: -210px;
+}
+
+input{
+    position:absolute;
+    top: -5000px;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.copyButtons{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: -14em;
+    padding-top: 200px;
+}
+
+.copyButtons div{
+    flex-basis: 100%;
+}
+
+.copyButtons button{
+    margin-left: calc(50% - 90px);
+}
+
+button{
+    color: rgb(255, 255, 255);
+    background-color: #00000029;
+    height: 50px;
+    width: 180px;
+    border-radius: 12px;
+}
+
+.shorter{
+    margin: 0;
+    padding: 0;
+}
+
+.cardStack .stripe, .stripeItems .card{
+    background-color: transparent;
+}
+
+.cardStack .stripe{
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.714);
+    border-style: solid;
+    background-color: hsla(228, 86%, 14%, 0.153);
+}
+
+/* --- PROJECT SELECT --- */
+
+.overview{
+    display: flex;
+    width: 100%;
+    margin: 300px auto;
+    justify-content: center;
+    gap: 100px;
+}
+
+.quickView{
+    margin: auto 10px;
+}
+
+.quickView video, .quickView img{
+    width: 1000px;
+    max-width: 60vw;
+}
+
+.quickInfo {
+    flex-basis: 25%;
+    margin: auto 10px;
+}
+
+.quickInfo h2{
+    text-align: left;
+}
+
+.mini img{
+    width: 30px;
+    margin: auto 0;
+}
+
+.mini{
+    flex-basis: 0;
+    margin: auto 0;
+}
+
+.short{
+    margin:10px auto;
+    
+}
+
+.banner{
+    margin: 50px 0;
+}
+
+.projectButtons{
+    display: flex;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+/* --- DEMO --- */
+
+.demo{
+    width: 100%;
+    height: 90vh;
+    border: none;
+}
+
+/* --- PROJECT PAGES --- */
+
+.page.overview{
+    margin: 10px auto;
+}
+
+.projectContent{
+    margin: 100px auto;
+}
+
+.projectContent h2{
+    margin-top: 100px;
+}
+
+.list{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.process p{
+    width: 50%;
+    margin: 20px auto 50px;
+}
+
+.threeStack{
+    display: flex;
+    gap: 50px;
+}
+
+.researchText, .affinity, .personas{
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.researchText p{
+    width: 100%;
+}
+
+.projectContent iframe{
+    width: 100%;
+    height: 500px;
+}
+
+.twoSquare{
+    display: flex;
+}
+
+.fourSquare img{
+    width: 50%;
+}
+
+.square{
+    width: 100%;
+}
+
+.squareSpace{
+    gap: 50px;
+}
+
+#model{
+    height: 100%;
+    width: 100%;
+}
+
+.whiteSpace{
+    height: 764px;
+    padding-top: 100px;
+    background-color: white;
+}
+
+#model{
+    width: 100%;
+}
+
+.centerSquare{
+    gap: 50px;
+    justify-content: center;
+}
+
+.centerSquare img{
+    width: 800px;
+}
+
+.slides{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.slideImg{
+    margin: 20px auto;
+}
+.slideImg img{
+    max-width: 100%;
+}
+
+@media  screen and (max-width:500px) {
+    
+    h1{
+        font-size: 3em;
+        margin: 50px auto;
+    }
+    
+    h2{
+        font-size: 2em;
+    }
+    
+    .wideCard{
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    .wideCard p{
+        width: 90%;
+    }
+    
+    .wideCard img{
+        margin: 0;
+    }
+    
+    .cardStack{
+        flex-direction: column;
+    }
+    
+    .overview{
+        gap: 20px;
+        margin: 100px auto;
+        flex-direction: column-reverse;
+    }
+    
+    .quickView video, .quickView img{
+        max-width: 100%;
+    }
+    
+    .quickInfo h2{
+        text-align: center;
+    }
+    
+    .spacer{
+        display: none;
+    }
+    
+    ul{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    li a{
+        padding: 10px 5px;
+    }
+    
+    .stripeItems{
+        flex-direction: column;
+    }
+    
+    .stripe{
+        margin-top: 50px;
+    }
+    
+    .eduStripe{
+        margin: 0;
+    }
+    
+    .uni{
+        margin: 0;
+    }
+    
+    .uni img{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .subStripe{
+        padding-top: 10px;
+    }
+    
+    .copyButtons{
+        display: none;
+    }
+    
+    .uni.short p{
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .uni.mini img{
+        margin-top: 20px;
+    }
+    
+    .stripeItems{
+        gap: 10px;
+    }
+    
+    .single{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .process p{
+        width: 90%;
+    }
+    
+    .twoSquare{
+        flex-direction: column;
+    }
+    
+    video{
+        width: 100%;
+    }
+    
+    .modelBox{
+        display: none;
+    }
+    
+    .centerSquare img{
+        width: 100%;
+    }
+    
+    .threeStack{
+        flex-direction: column;
+    }
+    
+    .twoSquare img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .slides{
+        margin-top: 50px;
+    }
+    
+    .slideImg{
+        margin: 5px auto;
+    }
+    
+    .slideImg img{
+        max-width: 100%;
+    }
+}
