@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Autism Resources Hub</title>
+	<link rel="icon" href="../assets/images/CS.svg">
+	<link rel="stylesheet" href="../assets/css/style.css">
+
+    <!--IMPORTS MODEL-VIEWER PKG -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+
+<body><div class="container">
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="spacer"><a></a></li>
+            <li><a class="active" href="../projects.html">Projects</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../assets/docs/carson-schwab_ux-resume.pdf">Resume</a></li>        
+        </ul>
+    </nav>
+
+<!-- MAIN CONTENT -->
+<main>
+        
+    
+    <div class="page overview">
+        <div class="quickInfo">
+            
+            <h2>Autism Resources Hub: Everything You Need to Know in One Place</h2>
+            
+            <div class="banner">
+                <div class="stripeItems">
+                    <div class="uni mini">
+                        <img src="../assets/icons/about.png" alt="temp">
+                    </div>
+                    <div class="uni short">
+                        <p>Group Work</p>
+                    </div>
+                </div>
+                <div class="stripeItems">
+                    <div class="uni mini">
+                        <img class="projectIcon" src="../assets/icons/projects.png" alt="temp">
+                    </div>
+                    <div class="uni short">
+                        <p>Wireframe&nbsp;Prototype, UX&nbsp;Design, User&nbsp;Research</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p>The web currently has tons of resources relating to autism, but it can be difficult to know where to look. Autism Resources Hub aims to solve this problem by centralizing existing information into a community managed repository. Check out my group's process during the development of Autism Resources Hub by clicking one of the buttons below, or keep scrolling to see the final high fidelity prototype.</p>
+            
+            <div class="projectButtons">
+                <button type="button" class="single" id="button1" onmouseover="colorChange1()" onmouseout="colorReturn1()" onclick="document.location='../projects/arh-demo.html'">Live Demo</button>
+            </div>
+        </div>
+        
+        <div class="quickView">
+            <img src="../assets/images/arh.gif" alt="">
+        </div>
+        
+    </div>
+    
+    <div class="projectContent">
+        <h2>Overview</h2>
+        <div class="process">
+            <div class="list">
+                <ol>
+                    <li>The Problem</li>
+                    <li>Goals</li>
+                    <li>Process</li>
+                    <li>Prototype</li>
+                    <li>Results</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div>
+            <h2>Problem</h2>
+            <div class="process">
+                <p>The web mainly offers fragmented information regarding different aspects of autism, with little centrality amongst fragments. Fragmentation of information about this community may result in a frustrating, fruitless search effort until the user has identified sites that suit their particular needs.
+                <br>
+                To the best of our knowledge, there are no information hubs on the web that centralize resources for a diverse scope of autism-topics. Moreover, a user would be hard-pressed to verify the reputability of many existing resources.</p>
+            </div>
+            
+            <h2>Proposal</h2>
+            <div class="process">
+                <p>We propose the creation of a central hub website that does not aim to answer everyone's questions with it's own original content but rather, excels at pointing people in the direction of other sites that are more subject-specialized. Since the subject of autism involves a plethora of related sub-topics, our site will prioritize and facilitate good user experience. This will include a focus on simple and clean design, a resource directory with intuitive navigation, and a search function. The search function will ideally suggest search terms to users who may not be familiar with common terminology relevant to autism. This will solve the problem of a user searching for information that exists, but may be difficult to find because they don't know the correct terms.
+                The proposed hub will be more than just a directory of websites, this site will be community-driven.  Users of this site who are experienced with autism, or has a great resource to share can petition/suggest the addition of a new resource, or even an entirely new topic by posting a linked resource. The hub's users will have the power to vote/react to these user-posted links. A select group of reputable users will have the option to be promoted to site moderators who monitor posts and add the best ones to the hub's library of resources.</p>
+            </div>
+        </div>
+        
+        <h2>User Research</h2>
+        <div class="process threeStack">
+            
+            <div class="researchText">
+                <div>
+                    <h3>Contextual Inquiry</h3>
+                    <p>In order to learn more about this project's stakeholders, our team completed a contextual inquiry which was focused on gathering information about the Autistic Community. Our user-interviews naturally resulted in several insights which we documented and organized into an affinity board with Miro. By analyzing these results we were able to identify several key aspects of our user base, represented by the ensuing user personas.</p>
+                </div>
+                
+                <div>
+                    <h3>Takeaways</h3>
+                    <p>Our initial assumption that parents will be the sole primary users has been disrupted a little. Although we believe people with autism will still be secondary users, a small proportion of autistic people who do not need a guardians help when using technology will behave in the same manner as our primary persona when using the platform. We also understood the importance of an anti-persona and believe that having one prepared will make the platform design process more efficient.
+                    While we have gained valuable insight from interviews, it would be helpful if we are able to connect with a few more individuals of each role to be able to really draw meaningful behaviors and conclusions.</p>
+                </div>
+            </div>
+                
+            <div class="affinity">
+                <h3>Affinity Diagram</h3>
+                <iframe allowfullscreen src="https://miro.com/app/live-embed/o9J_lvDeqZo=/?moveToViewport=-71998,-45053,76807,43470"></iframe>
+            </div>
+            
+            <div class="personas">
+                <h3>User Personas</h3>
+                <div class="fourSquare">
+                    <div class="twoSquare">
+                        <img src="../assets/images/persona-primary.png" alt="">
+                        <img src="../assets/images/persona-anti.png" alt="">
+                    </div>
+                    <div class="twoSquare">
+                        <img src="../assets/images/persona-autistic.png" alt="">
+                        <img src="../assets/images/persona-teacher.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <h2>Prototype Development</h2>
+        <div class="process">
+            
+            <div class="fourSquare">
+                <div class="twoSquare squareSpace">
+                    <div class="square">
+                        <h3>Initial Sketches</h3>
+                        <iframe allowfullscreen src="https://miro.com/app/live-embed/o9J_ltRMxx8=/?moveToViewport=-5721,-3993,25556,14464"></iframe>
+                    </div>
+                    
+                    <div class="square">
+                        <h3>Low Fidelity Wireframes</h3>
+                        <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FdU0btXmJS5VIIeaUBRpvLs%2FAutism-Resources-Hub-%255BDEMO%255D%3Ftype%3Ddesign%26node-id%3D2601%253A2780%26mode%3Ddesign%26t%3DipeEl0Vf2vkllsXg-1"></iframe>
+                    </div>                    
+                </div>
+                <div class="twoSquare squareSpace">
+                    <div class="square">
+                        <h3>High Fidelity Wireframes</h3>
+                        <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FdU0btXmJS5VIIeaUBRpvLs%2FAutism-Resources-Hub-%255BDEMO%255D%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DipeEl0Vf2vkllsXg-1"></iframe>
+                    </div>
+                    
+                    <div class="square">
+                        <h3>Interactive Demo</h3>
+                        <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FdU0btXmJS5VIIeaUBRpvLs%2FAutism-Resources-Hub-%255BDEMO%255D%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-5929%26viewport%3D-60%252C-258%252C0.16%26t%3DYdttap7bEKAWSYIs-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D1%253A5929%26mode%3Ddesign"></iframe>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="process">
+            <h2>User Testing</h2>
+            <p>Autism Resources Hub was tested by four users with varying roles in the autism community (parent, grandparents, autistic student, and also a person who is a Quality Software Engineer). For the first round of testing the Designers observed the users exploring the web pages and noted their observations. Some observations were discussed further for suggestions or more explanation of what the user liked or didn't like about aspects of the pages. The observations were recorded with what page they were on, level of severity (low - being minor cosmetic issues or spelling/grammar and high being more major design issues or bugs to functionality), and suggested fixes.
+            Prior to the second round of testing the ARH design team discussed and implemented the fixes suggested by the users. The designers implemented most all of the suggestions, especially the straightforward and cosmetic fixes. In order to make the site less overwhelming the design team replaced the 'Get Started' button that automatically directed the user to create an account with a overlay that provided a brief overview of the site. The ARH team showed the updated site to a subset of users who identified the most or the highest severity of updates. The users liked the updates and pointed out a few new observations. The Design team fixed the few observations that were low severity issues.</p>
+        </div>
+        
+    </div>
+    
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div>
+        <a href="#top">Back to top</a>
+    </div>
+    
+    <p>©<span id="thisYear"></span> Carson Schwab Design. All Rights Reserved</p>
+    <script>document.getElementById('thisYear').innerHTML = new Date().getFullYear();</script>
+</footer>
+
+<script>
+    function colorChange1(){
+        var btn = document.getElementById("button1");
+        btn.style.color = "black";
+        btn.style.backgroundColor = "#b2e7fb";
+    }
+    function colorReturn1(){
+        var btn = document.getElementById("button1");
+        btn.style.color = "white";
+        btn.style.backgroundColor = "#00000029";
+    }
+</script>
+
+</div></body></html>

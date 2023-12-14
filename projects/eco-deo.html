@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Autism Resources Hub</title>
+	<link rel="icon" href="../assets/images/CS.svg">
+	<link rel="stylesheet" href="../assets/css/style.css">
+
+    <!--IMPORTS MODEL-VIEWER PKG -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+
+<body><div class="container">
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="spacer"><a></a></li>
+            <li><a class="active" href="../projects.html">Projects</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../assets/docs/carson-schwab_ux-resume.pdf">Resume</a></li>        
+        </ul>
+    </nav>
+
+<!-- MAIN CONTENT -->
+<main>
+        
+    
+    <div class="page overview">
+        <div class="quickInfo">
+            
+            <h2>Eco Deo</h2>
+            
+            <div class="banner">
+                <div class="stripeItems">
+                    <div class="uni mini">
+                        <img src="../assets/icons/about.png" alt="temp">
+                    </div>
+                    <div class="uni short">
+                        <p>Solo Work</p>
+                    </div>
+                </div>
+                <div class="stripeItems">
+                    <div class="uni mini">
+                        <img class="projectIcon" src="../assets/icons/3d.png" alt="temp">
+                    </div>
+                    <div class="uni short">
+                        <p>Industrial Design, Green Design, Design Competition</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p>A fully recyclable deodorant stick. This product was diesigned for a Cradle to Cradle design competition.</p>
+            
+        </div>
+        
+        <div class="quickView">
+                <img src="../assets/images/ed1.png" alt="">
+        </div>
+        
+    </div>
+    
+    <div class="process">
+        <div class="list">
+        </div>
+    </div>
+        
+        <div class="process">
+            
+            <div class="slides">
+                <h2>Process</h2>
+                    <div class="slideImg">
+                        <img src="../assets/images/ed1.png">
+                    </div>
+                    
+                    <div class="slideImg">
+                        <img src="../assets/images/ed2.png">
+                    </div>
+                    
+                    <div class="slideImg">
+                        <img src="../assets/images/ed3.png">
+                    </div>
+                    
+                    <div class="slideImg">
+                        <img src="../assets/images/ed4.png">
+                    </div>
+                    
+            </div>
+            
+        </div>
+    
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div>
+        <a href="#top">Back to top</a>
+    </div>
+    
+    <p>©<span id="thisYear"></span> Carson Schwab Design. All Rights Reserved</p>
+    <script>document.getElementById('thisYear').innerHTML = new Date().getFullYear();</script>
+</footer>
+
+<script>
+    function colorChange1(){
+        var btn = document.getElementById("button1");
+        btn.style.color = "black";
+        btn.style.backgroundColor = "#b2e7fb";
+    }
+    function colorReturn1(){
+        var btn = document.getElementById("button1");
+        btn.style.color = "white";
+        btn.style.backgroundColor = "#00000029";
+    }
+</script>
+
+</div></body></html>
