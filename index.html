@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Project:   Portfolio - v1.10
+	ByAuthor:   Carson Schwab
+	Descript:   Original portfolio with changes made for hosting on GitHub
+	Overview:
+				ID port moved to new pg
+				Converted to mobile friendly
+				Removed lastLetter spacing and moving background
+-->
+
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carson Schwab - Homepage</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--IMPORTS MODEL-VIEWER PKG -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+	
+	
+	<script>
+		function showDetails(obj) {
+  			var hovered = obj.id;
+			var i = "item_";
+			var n = "new_";
+			var x = hovered.charAt(hovered.length-1);
+			if (hovered == i + x + x){
+				document.getElementById(i + x).style.display = "none";
+				document.getElementById(n + x).style.display = "unset";
+			}
+		}
+
+		function hideDetails(obj) {
+  			var hovered = obj.id;S
+			var i = "item_";
+			var n = "new_";
+			var x = hovered.charAt(hovered.length-1);
+			if (hovered == i + x + x){
+				document.getElementById(i + x).style.display = "unset";
+				document.getElementById(n + x).style.display = "none";
+			}
+		}
+
+		function showProject(obj) {
+  			var clicked = obj.id;
+			if (clicked == "p1Button"){
+				document.getElementById("p1").style.visibility = "visible";
+				document.getElementById("p1").style.display = "block";
+				document.getElementById("p2").style.visibility = "hidden";
+				document.getElementById("p2").style.display = "none";
+				document.getElementById("p3").style.visibility = "hidden";
+				document.getElementById("p3").style.display = "none";
+				document.getElementById("p4").style.visibility = "hidden";
+				document.getElementById("p4").style.display = "none";
+			}
+			if (clicked == "p2Button"){
+				document.getElementById("p1").style.visibility = "hidden";
+				document.getElementById("p1").style.display = "none";
+				document.getElementById("p2").style.visibility = "visible";
+				document.getElementById("p2").style.display = "block";
+				document.getElementById("p3").style.visibility = "hidden";
+				document.getElementById("p3").style.display = "none";
+				document.getElementById("p4").style.visibility = "hidden";
+				document.getElementById("p4").style.display = "none";
+			}
+			if (clicked == "p3Button"){
+				document.getElementById("p1").style.visibility = "hidden";
+				document.getElementById("p1").style.display = "none";
+				document.getElementById("p2").style.visibility = "hidden";
+				document.getElementById("p2").style.display = "none";
+				document.getElementById("p3").style.visibility = "visible";
+				document.getElementById("p3").style.display = "block";
+				document.getElementById("p4").style.visibility = "hidden";
+				document.getElementById("p4").style.display = "none";
+			}
+			// if (clicked == "p4Button"){
+			// 	document.getElementById("p1").style.visibility = "hidden";
+			// 	document.getElementById("p1").style.display = "none";
+			// 	document.getElementById("p2").style.visibility = "hidden";
+			// 	document.getElementById("p2").style.display = "none";
+			// 	document.getElementById("p3").style.visibility = "hidden";
+			// 	document.getElementById("p3").style.display = "none";
+			// 	document.getElementById("p4").style.visibility = "visible";
+			// 	document.getElementById("p4").style.display = "block";
+			// }
+		}
+	</script>
+</head>
+
+<body>
+	
+    <!-- NAVBAR -->
+	<a id="top"></a>
+    <div id="navbar">
+		<a href="#portfolioLink">Jump to portfolio</a> 
+		<a href="resume.html">Resume</a>
+    </div>
+
+	<!-- CONTENT -->
+	<div id="container">
+
+		<!-- INTRO -->
+		<div id="intro">
+			<h1>Carson Schwab</h1>
+			<img src="assets/images/carson.png" alt="A picture of Carson">
+			<p>Welcome to my homepage! Read on to learn a bit about me, or skip to a portfolio of my work at the bottom of the page.</p>
+		</div>
+
+		<!-- BIO -->
+		<div id="aboutMe">
+			<h2>About Me</h2>
+
+			<h3>What I Do</h3>
+			<p>I develop interactive and immersive web experiences targeting some of today's most advanced interfacing technology like augmented reality and virtual reality.</p>
+			
+			<h3>My Vision</h3>
+			<p>To put it simply: I want to push the web into the 3rd dimension. In my experience, the vast majority of today's websites are clinging to yesterday's interfacing capabilities. Basically, humans experience the world in 3D, but we're currently forced to spend our lives interacting with most any digital technology through a 2D interface. I want to create a future in which users can interact with the web in the same way they would interact with anything else in their surrounding physical environment.</p>
+
+			<h3>My Contact Info</h3>
+			<p id="contact">Email: <a href="carsonschwab@gmail.com">Carsonschwab@gmail.com</a></p>
+			<div id="resumeButton"><button id="abtButton" onclick="document.location='resume.html'">Check out my resume!</button></div>
+			<!-- web-resume.html -->
+
+			<h3 id="timelineTitle">My Timeline</h3>
+			<div id="timelineContainer">
+				<hr>
+				
+				<div id="timeline">
+					<img id="item_aa" onmouseover="showDetails(this)" onmouseout="hideDetails(this)" src="assets/images/born.png" alt="Icon of a birthday cake on a timeline">
+					<img id="item_bb" onmouseover="showDetails(this)" onmouseout="hideDetails(this)" src="assets/images/move.png" alt="Icon of a moving truck on a timeline">
+					<img id="item_cc" onmouseover="showDetails(this)" onmouseout="hideDetails(this)" src="assets/images/grad.png" alt="Icon of a graduation cap on a timeline">
+					<img id="item_dd" onmouseover="showDetails(this)" onmouseout="hideDetails(this)" src="assets/images/move.png" alt="Icon of a moving truck on a timeline">
+					<img id="item_ee" onmouseover="showDetails(this)" onmouseout="hideDetails(this)" src="assets/images/abroad.png" alt="Icon of a plane on a timeline">
+					<img id="item_ff" onmouseover="showDetails(this)" onmouseout="hideDetails(this)" src="assets/images/grad.png" alt="Icon of a graduation cap on a timeline">
+					<img id="item_gg" onmouseover="showDetails(this)" onmouseout="hideDetails(this)" src="assets/images/move.png" alt="Icon of a moving truck on a timeline">
+					<img id="item_hh" onmouseover="showDetails(this)" onmouseout="hideDetails(this)" src="assets/images/work.png" alt="Icon of a suitcase on a timeline">
+					<img id="item_ii" onmouseover="showDetails(this)" onmouseout="hideDetails(this)" src="assets/images/work.png" alt="Icon of a suitcase on a timeline">
+					<img id="item_jj" onmouseover="showDetails(this)" onmouseout="hideDetails(this)" src="assets/images/work.png" alt="Icon of a suitcase on a timeline">
+					<img id="item_kk" onmouseover="showDetails(this)" onmouseout="hideDetails(this)" src="assets/images/grad.png" alt="Icon of a graduation cap on a timeline">
+					<img id="item_ll" onmouseover="showDetails(this)" onmouseout="hideDetails(this)" src="assets/images/create.png" alt="Icon of a lightbulb on a timeline">
+					<p id="item_a">Born</p>
+					<p id="item_b">Moved</p>
+					<p id="item_c">Graduated</p>
+					<p id="item_d">Moved</p>
+					<p id="item_e">Study Abroad</p>
+					<p id="item_f">Graduated</p>
+					<p id="item_g">Moved</p>
+					<p id="item_h">Worked</p>
+					<p id="item_i">Worked</p>
+					<p id="item_j">Worked</p>
+					<p id="item_k">Graduate</p>
+					<p id="item_l">Create</p>
+					<p id="new_a" class="hide"><span>Born:</span><br>1995<br>Santa Rosa<br>C.A.</p>
+					<p id="new_b" class="hide"><span>Moved:</span><br>1998<br>Skaneateles<br>N.Y.</p>
+					<p id="new_c" class="hide"><span>Graduated:</span><br>2013<br>Skaneateles H.S.<br>N.Y.</p>
+					<p id="new_d" class="hide"><span>Moved:</span><br>2013<br>Raleigh<br>N.C.</p>
+					<p id="new_e" class="hide"><span>Study Abroad:</span><br>2017<br>Prague<br>Czech Rep.</p>
+					<p id="new_f" class="hide"><span>Graduated:</span><br>2018<br>N.C. State Uni.<br>N.C.</p>
+					<p id="new_g" class="hide"><span>Moved:</span><br>2018<br>Skaneateles<br>N.Y.</p>
+					<p id="new_h" class="hide"><span>Worked:</span><br>2019<br>Madog<br>Syracuse N.Y.</p>
+					<p id="new_i" class="hide"><span>Worked:</span><br>2020<br>Stonewell Bodies<br>Genoa N.Y.</p>
+					<p id="new_j" class="hide"><span>Worked:</span><br>2021<br>UPSCO<br>Moravia N.Y.</p>
+					<p id="new_k" class="hide"><span>Graduated:</span><br>2023 (Expected)<br>R.I.T. Uni.<br>N.Y.</p>
+					<p id="new_l" class="hide"><span>Develop:</span><br>2023+<br>Somewhere<br>New</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- PORTFOLIO -->
+		<a id="portfolioLink"></a> 
+		<div id="portfolio">
+			<h2>Portfolio</h2>
+				 
+			<div id="buttonBanner">
+				<div id="projectButtons">
+					<button class="pButton" id="p1Button" onclick="showProject(this)">Autism Resources Hub</button>
+					<button class="pButton" id="p2Button" onclick="showProject(this)">Caption Mask</button>
+					<button class="pButton" id="p3Button" onclick="showProject(this)">3D Models</button>
+					<!-- <button class="pButton" id="p4Button" onclick="showProject(this)">Industrial Design Projects</button> -->
+					<button class="pButton" id="p4Button" onclick="document.location='industrial-design.html'">Industrial Design Projects</button>
+					
+					<!-- <img class="pButtonIcon" id="p1ButtonIcon" src="assets/images/arh.png" alt="Icon of ...">
+					<img class="pButtonIcon" id="p2ButtonIcon" src="assets/images/caption.png" alt="Icon of ...">
+					<img class="pButtonIcon" id="p3ButtonIcon" src="assets/images/3d_models.png" alt="Icon of ...">
+					<img class="pButtonIcon" id="p4ButtonIcon" src="assets/images/old_port.png" alt="Icon of ..."> -->
+				</div>
+			</div>
+			
+			<div id="projectCanvas">
+				<div id="p1">
+					<div class="projectContent">
+						<img class="projectImg" id="arh_img" src="assets/images/arh-home.png" alt="Icon of ...">
+
+						<div class="projectDetails">
+							<h3>Autism Resources Hub</h3>
+							<p>The web currently has tons of resources relating to autism, but it can be difficult to know where to look. Autism Resources Hub aims to solve this problem by centralizing existing information into a community managed repository.</p>
+							<br>
+							<p>Check out my group's process during the development of Autism Resources Hub by clicking one of the buttons below, or keep scrolling to see the final high fidelity prototype.</p>
+							<h4>Project Documentation</h4>
+							<button class="pButton" class="p1Button" onclick="window.location.href='https://sonaisha.wixsite.com/hcin620/research-process';">Contextual Inquiry</button>
+							<button class="pButton" class="p1Button" onclick="window.location.href='https://sonaisha.wixsite.com/hcin620/user-persona';">User Personas</button>
+							<button class="pButton" class="p1Button" onclick="window.location.href='https://sonaisha.wixsite.com/hcin620/low-fidelity';">Wireframes (Lo-Fi)</button>
+							<button class="pButton" class="p1Button" onclick="window.location.href='https://sonaisha.wixsite.com/hcin620/high-fidelity-wireframes';">Wireframes (Hi-Fi)</button>
+						</div>
+					</div>
+					
+					<div class="moreDetails">
+						<!-- <div class="detailShots">
+							<img src="assets/images/arh-article.png" alt="...">
+							<img src="assets/images/arh-forum.png" alt="...">
+						</div> -->
+						<iframe 
+							id="figma" 
+							allowfullscreen
+							style="border: none;" 
+							src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FdU0btXmJS5VIIeaUBRpvLs%2FAutism-Resources-Hub-%255BDEMO%255D%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-5929%26viewport%3D-462%252C808%252C0.92%26t%3DGDgNQ92zVFyoYrE3-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D1%253A5929%26mode%3Ddesign" 
+						></iframe>
+						
+						<iframe 
+							src="https://www.youtube.com/embed/LgRk6ZLJekQ">
+						</iframe>
+					</div>
+				</div>
+
+				<div id="p2">
+					<div class="projectContent">
+						<div class="frame">
+
+							<!-- Model functionality -->
+							<model-viewer
+								class="model"
+								src="assets/images/caption-mask.glb" 
+								alt="Face mask that displays captions"
+								environment-image="neutral"
+								exposure="0.95"
+								shadow-intensity="4" 
+								shadow-softness="3" 
+								camera-orbit="60deg" 
+								camera-controls 
+								ar 
+								ar-modes="webxr scene-viewer quick-look">
+							</model-viewer>
+						</div>
+						
+						<div class="projectDetails">
+							<h3>Caption Mask</h3>
+							<p>The COVID-19 pandemic has made most everyone's life more difficult. This is especially true for the Deaf and Hard of Hearing Community due to the fact that many deaf people can't read lips while the person they are communicating with is wearing a mask that obscures their mouth. Caption Mask solves this problem by converting the user's speech to text which is displayed on a screen attached to the mask.</p>
+							<br>
+							<p>Check out the study report on Caption Mask that my group and I wrote by clicking button below, or keep scrolling to see more details.</p>
+							<h4>Project Documentation</h4>
+							<button class="pButton" class="p1Button" onclick="window.location.href='https://docs.google.com/document/d/1d9m15rWg1RPqzbxq0_e946qXfLFPtP3x/edit?usp=sharing&ouid=100209520312450126883&rtpof=true&sd=true';">Project Study Report (White Paper)</button>
+						</div>
+					</div>
+					
+					<div class="moreDetails">
+						<!-- <div class="detailShots">
+							<img src="assets/images/temp.png" alt="...">
+							<img src="assets/images/temp.png" alt="...">
+						</div> -->
+						<iframe 
+							src="https://www.youtube.com/embed/X61jd9GH6dY">
+							<!-- src="https://www.youtube.com/watch?v=k2LP7bHNNTc" -->
+						</iframe>
+						
+						<object id="mask_prez" data="assets/images/mask_prez.pdf" type="application/pdf" width="100%" height="1000px">
+							<p>Your web browser doesn't have a PDF plugin.
+						</object>
+					</div>
+				</div>
+				
+				<!-- <div id="p4" class="projectContent">
+					<object id="id_port" data="assets/images/id_portfolio.pdf" type="application/pdf" width="100%" height="100%">
+						<p>Your web browser doesn't have a PDF plugin.
+					</object>
+				</div> -->
+				
+				<div id="p3">
+					<div class="projectContent">
+						<div class="frame">
+							<model-viewer
+								class="model"
+								src="assets/images/ss.glb" 
+								alt="A carrying case for drawings and design tools"
+								environment-image="neutral"
+								exposure="0.95"
+								shadow-intensity="4" 
+								shadow-softness="3" 
+								camera-controls 
+								ar  
+								ar-modes="webxr scene-viewer quick-look">
+							</model-viewer>
+						</div>
+
+						<div class="projectDetails" class="single">
+							<h3>Sketch Safe</h3>
+							<p>A carrying case for designers and engineers. It holds papers and design tools in a shock and water resistant housing. The transparent white-board affixed to the front of the case serves as a clipboard, whiteboard, or window to view an existing drawing through and markup with overlay drawings.</p>
+							<p>See "Industrial Design Projects" for additional details.</p>
+						</div>
+					</div>
+
+					<hr class="projectTop">
+
+					<div class="projectContent">
+						<div class="frame">
+							<model-viewer
+								class="model"
+								src="assets/images/pv.glb" 
+								alt="Tool that clips onto a pole vault pole"
+								environment-image="neutral"
+								exposure="0.95"
+								shadow-intensity="4" 
+								shadow-softness="3" 
+								camera-controls 
+								ar  
+								ar-modes="webxr scene-viewer quick-look">
+							</model-viewer>
+						</div>
+
+						<div class="projectDetails" class="single">
+							<h3>Pole Vault Pro</h3>
+							<p>This multitool is a pole vaulter's best friend. Its main function is to clamp onto the end of a pole vault pole, allowing the user to lift and replace the bar that vaulters attempt jumping over. It also doubles as a spike-tightening tool. While not in use, it can be clamped around the roll of grip tap that any serious pole vaulter will have on-hand.</p>
+							<p>See "Industrial Design Projects" for additional details.</p>
+						</div>
+					</div>
+
+					<hr class="projectTop">
+
+					<div class="projectContent">
+						<div class="frame">
+							<model-viewer
+								class="model"
+								src="assets/images/ed.glb" 
+								alt="Cup shaped deodorant stick"
+								environment-image="neutral"
+								exposure="0.95"
+								shadow-intensity="4" 
+								shadow-softness="3" 
+								camera-controls 
+								ar  
+								ar-modes="webxr scene-viewer quick-look">
+							</model-viewer>
+						</div>
+
+						<div class="projectDetails" class="single">
+							<h3>Eco Deo</h3>
+							<p>Designed for the Cradle to Cradle design competition, this fully-recyclable deodorant stick concept focuses on eliminating waste. The cup and lid can easily be separated for cleaning, which makes them recyclable. The hemisherical shape means it ships flat, and uses less packaging to contain a given volume.</p>
+							<p>See "Industrial Design Projects" for additional details.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="linkToTop">
+			<!-- <a href="#portfolioLink">Jump to portfolio</a> -->
+			<!-- <a id="spacer" href="#top">Jump to top</a> -->
+			<a id="spacer" href="#portfolioLink">Jump to top</a>
+		</div>
+	</div>
+</body>
+</html>
